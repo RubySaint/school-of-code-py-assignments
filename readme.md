@@ -1,3 +1,1 @@
-# Git repo for School of Code Python course assignments and resources
-
-test
+### Git repo for School of Code Python course assignments and resources
