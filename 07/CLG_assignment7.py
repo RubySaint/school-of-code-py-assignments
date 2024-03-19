@@ -2,8 +2,8 @@
 # Name: Ruby Saint
 # Date: 15/03/2024
 
-import vowelcount
+from vowelcount import vowel_counter
              
 name = input("Enter your name to count the vowels: ")
-num_vowels = vowelcount.vowel_counter(name)
+num_vowels = vowel_counter(name)
 print(f"My name is {name}.\nI have {num_vowels} vowels in my name!")
