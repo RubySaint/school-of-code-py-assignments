@@ -5,7 +5,7 @@ class KitchenAppliance:
         self.brand = brand
 
     def report(self):
-        print("This is " + str(self.model_number) + " from " + self.brand)
+        print(f'This is {str(self.model_number)} from {self.brand}')
 
 
 class SmartCoffeeMachine(KitchenAppliance):
@@ -28,7 +28,7 @@ class SmartCoffeeMachine(KitchenAppliance):
             print(f'Preparing your coffee... \nYour {coffee_type} is ready!')
         
 
-my_coffee_machine = SmartCoffeeMachine(12334254, 'Ragdoll')
+my_coffee_machine = SmartCoffeeMachine(1234005, 'Keurig')
 my_coffee_machine.report()
 my_coffee_machine.update_menu('latte')
 my_coffee_machine.update_menu('hazelnut latte')
