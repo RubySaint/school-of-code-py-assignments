@@ -13,6 +13,8 @@ class Root(tk.Tk):
         self.btn = tk.Button(self,text='Enter',command=self.enter)
         self.btn.pack()
 
+        self.bind('<Return>',self.enter) #Recognises enter key as equivalent to pressing the button
+
     def enter(self):
         self.user_input = self.entry_0.get()
         if PalindromeChecker.check_input(self) == None:
