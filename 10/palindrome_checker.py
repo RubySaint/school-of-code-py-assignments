@@ -4,16 +4,16 @@ class PalindromeChecker:
         self.user_input = user_input 
 
     def check_input(self):
-        input_form = ''.join(char for char in self.user_input.lower() if char.isalnum())
+        input_formatted = ''.join(char for char in self.user_input.lower() if char.isalnum())
 
-        input_list = list(input_form)
+        input_list = list(input_formatted)
         input_list.reverse()
         reverse_str = ''.join(input_list)
 
-        if len(input_form) < 1:
+        if len(input_formatted) < 1:
             return None
         else:
-            return reverse_str==input_form
+            return reverse_str==input_formatted
 
 
 
